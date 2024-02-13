@@ -1,6 +1,6 @@
 package cz.engeto.ja;
 
-public class Computers {
+public class Computer {
 
     private String description;
 
@@ -8,7 +8,7 @@ public class Computers {
 
     private double price;
 
-    public Computers(String description, int yearOfProduction, double price) {
+    public Computer(String description, int yearOfProduction, double price) {
         this.description = description;
         this.yearOfProduction = yearOfProduction;
         this.price = price;
