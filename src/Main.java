@@ -9,6 +9,9 @@ import java.util.List;
 
 public class Main {
 
+    // pokus
+
+
     public static  void main(String[] args){
         List<Computer> defaultList = new ArrayList<>();
         defaultList.add(new Computer("MSI", 2018, 17500));
@@ -19,6 +22,10 @@ public class Main {
 
         System.out.println(manager.getCountOfMSIComputers());
         manager.getComputers().forEach(System.out::println);
+    }
+
+    private static void pokus(){
+
     }
 
     public static void mainSortTest() {
