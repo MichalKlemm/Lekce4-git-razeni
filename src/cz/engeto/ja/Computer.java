@@ -2,7 +2,7 @@ package cz.engeto.ja;
 
 import java.math.BigDecimal;
 
-public class Computer {
+public class Computer implements Comparable<Computer> {
 
     private String description;
 
@@ -49,5 +49,16 @@ public class Computer {
         return description+" ("+ yearOfProduction+
                 ", price = " + price + " Kč)";
 
+    }
+
+    @Override
+    public int compareTo(Computer otherComputer) {
+        //"Standardní/výchozí" způsob řazení.
+        // Vrací:
+        //* Záporné číslo pokud má být tento počítač před otherComputer,
+        //* Nulu pokud jsou si oba počítače ekvivalentní (např. stejný rok výroby),
+        //* Kladné číslo pokud tento počítač má být až po otherComputer.
+        return this.description.compareTo(otherComputer.description);
+        // Moje třída Computer se bude standardně řadit podle popisu.
     }
 }
